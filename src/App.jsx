@@ -1,7 +1,9 @@
+import { Navbar } from "./components/layout/navbar/Navbar";
+
 function App() {
-  return (
-    <h1>Hola humanos</h1>
-  )
+  return <>
+    <Navbar />
+  </>
 }
 
-export default App
+export default App;
