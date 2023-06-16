@@ -1,4 +1,4 @@
-import { Cart } from "../../pages/cart/Cart";
+import { Cart } from "../../common/cart/Cart";
 import "./Navbar.css";
 
 export const Navbar = ()=> {
