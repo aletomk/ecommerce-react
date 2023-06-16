@@ -1,5 +1,29 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/*GRILLA APP*/
+
+#root{
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#grilla_header{
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+#grilla_main{
+  grid-area: main;
+}
+
+#grilla_footer{
+  grid-area: footer;
 }

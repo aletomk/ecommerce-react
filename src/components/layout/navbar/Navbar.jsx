@@ -2,7 +2,7 @@ import { Cart } from "../../pages/cart/Cart";
 import "./Navbar.css";
 
 export const Navbar = ()=> {
-    return <header>
+    return <>
         <a href="#"><img src="https://res.cloudinary.com/dtudxtnbv/image/upload/v1686853878/logo_kuyktu.png" className="logo"/></a>
         <nav>
             <ul className="menuNav">
@@ -13,5 +13,5 @@ export const Navbar = ()=> {
             </ul>
         </nav>
         <Cart />
-    </header>
+    </>
 }
