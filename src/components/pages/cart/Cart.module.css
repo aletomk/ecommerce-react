@@ -1,5 +1,26 @@
+.div_cart{
+    width: 230px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px;
+}
+
 .cart{
+    color: #000;
+    width: 28px;
+    height: 28px;
+    transition: all 0.5s ease-out;
+}
+
+.cart:hover{
     color: #F8C304;
-    width: 32px;
-    height: 32px;
+}
+
+.cart_widget{
+    background-color: #000;
+    color: #F8C304;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
 }

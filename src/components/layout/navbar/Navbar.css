@@ -1,5 +1,3 @@
-
-
 a{
     text-decoration: none;
     color: black;
@@ -7,11 +5,6 @@ a{
 
 li{
     list-style: none;
-    padding: 15px;
-}
-
-ul{
-    border: 1px solid red;
 }
 
 nav{
@@ -22,7 +15,23 @@ nav{
     display: flex;
 }
 
+.menuNav li{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 15px 5px 15px;
+}
+
+.menuNav li a{
+    transition: all 0.5s ease-out;
+}
+
+.menuNav li a:hover{
+    color: #F8C304;
+}
+
 .logo{
     width: 300px;
     height: 60px;
+    margin-left: 30px;
 }
