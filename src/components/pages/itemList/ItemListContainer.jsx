@@ -1,7 +1,7 @@
-import "./ItemListContainer.css";
+import "./ItemList.css";
 
-export const ItemList = ( {greeting} ) => {
+export const ItemListContainer = () => {
     return <>
-    <h1>{greeting}</h1>
+    <h1>Hola Mundo</h1>
     </>
 }
