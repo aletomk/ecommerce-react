@@ -6,5 +6,5 @@ export const CartWidget = () => {
       <a href="#"><FaCartArrowDown className={styles.cart} /></a>
       <div className={styles.cart_widget}>3</div>
     </div>
-}
+};
 

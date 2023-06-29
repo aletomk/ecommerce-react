@@ -6,5 +6,5 @@ export const Home = () => {
             <h1>Bienvenidos a la primer tienda dedicada a la Impresión 3D</h1>
         </section>
     </>
-}
+};
 
