@@ -1,19 +1,22 @@
 
 export const ItemList = ( {items} ) => {
     return (
-        <div>
+        <section>
         {
             items.map( (item) => {
-                return <section key={item.id}>
-                    <div>
-                        <h2>{item.title}</h2>
-                        <h3>{item.price}</h3>
-                        <img src={item.img} />
-                    </div>
-                </section>    
+                return <div key={item.id} className="card">
+                            <img src={item.img} />
+                            <div className="container_product">
+                                <span>{item.category}</span>
+                                <h2>{item.title}</h2>
+                                <h3>${item.price}</h3>
+                                <article>{item.description}</article>
+                            </div>
+                            <button>Comprar</button>
+                    </div>   
             } )
         }
-        </div>
+        </section>
     );
 };
 
