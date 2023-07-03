@@ -12,7 +12,7 @@ export const ItemList = ( {items} ) => {
                                 <h3>${item.price}</h3>
                                 <article>{item.description}</article>
                             </div>
-                            <button>Comprar</button>
+                            <button><a href="#">Comprar</a></button>
                     </div>   
             } )
         }

@@ -26,7 +26,7 @@ export let productos = [
         stock: 5, 
         description: "Placa Arduino que funciona como el cerebro de la impresora mediante código programado.", 
         category: "electrónica", 
-        img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1687996929/arduinomega_j06jvz.jpg"
+        img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1688343866/arduinomega_h781ws.webp"
     },
 
     {
@@ -44,7 +44,7 @@ export let productos = [
         title: "Filamento PLA 1.75mm Printalot", 
         price: 2500, 
         stock: 25, 
-        description: "Filamento PLA de 1.75mm de diametro de 1KG, marca Printalot, la más demandada de Argentina.", 
+        description: "Filamento PLA de 1.75mm de diametro de 1KG, marca Printalot.", 
         category: "filamentos", 
         img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1687996930/filamentoprintalot_kbrnh4.jpg"
     },
@@ -57,5 +57,25 @@ export let productos = [
         description: "Filamento PLA de 1.75mm de diametro de 1KG, excelente calidad.", 
         category: "filamentos", 
         img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1687996930/filamento3n3_cgnp3h.webp"
+    },
+
+    {
+        id: 7, 
+        title: "Cooler fan turbina 30x30 12v", 
+        price: 1500, 
+        stock: 30, 
+        description: "Turbina cooler 30x30mm 12v.", 
+        category: "repuestos", 
+        img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1688344664/cooler_mbn8gg.webp"
+    },
+
+    {
+        id: 8, 
+        title: "Pico nozzle 0.4mm", 
+        price: 500, 
+        stock: 100, 
+        description: "Pico/Nozzle de bronce de 0.4mm, para filamento 1.75mm.", 
+        category: "repuestos", 
+        img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1688344665/piconozzle_xcijye.jpg"
     }
 ];
