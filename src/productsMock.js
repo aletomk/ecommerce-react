@@ -71,7 +71,7 @@ export let productos = [
 
     {
         id: 8, 
-        title: "Pico nozzle 0.4mm", 
+        title: "Pico nozzle de bronce 0.4mm", 
         price: 500, 
         stock: 100, 
         description: "Pico/Nozzle de bronce de 0.4mm, para filamento 1.75mm.", 
