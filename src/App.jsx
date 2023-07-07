@@ -1,18 +1,18 @@
-import { Navbar } from "./components/layout/navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout } from "./components/layout/Layout";
 import { ItemListContainer } from "./components/pages/itemList/ItemListContainer";
 
-function App() {
-  return <>
-  <header id="grilla_header">
-    <Navbar />
-  </header>
-  <main id="grilla_main">
-    <ItemListContainer />
-  </main>
-  <footer id="grilla_footer">
 
-  </footer>  
-  </>
+function App() {
+  return (
+  <BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<ItemListContainer />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>  
+  );
 }
 
 export default App;

@@ -32,4 +32,6 @@
 
 #grilla_footer{
   grid-area: footer;
+  background-color: #252525;
+  height: 110px;
 }
