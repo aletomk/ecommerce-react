@@ -7,13 +7,13 @@ export const Navbar = ()=> {
         <Link to="/"><img src="https://res.cloudinary.com/dtudxtnbv/image/upload/v1686853878/logo_kuyktu.png" className="logo"/></Link>
         <nav>
             <ul className="menuNav">
-                <li><Link to="/src/components/pages/home/Home.jsx">Inicio</Link></li>
+                <li><Link to="/">Inicio</Link></li>
                 <li><Link to="#">Nosotros</Link></li>
                 <li><Link to="#">Contacto</Link></li>
             </ul>
         </nav>
         <ul className="tiendaCart">
-            <li className="botonTienda"><Link to="/src/components/pages/itemList/ItemListContainer.jsx">Tienda</Link></li> 
+            <li className="botonTienda"><Link to="/">Tienda</Link></li> 
             <CartWidget />
         </ul>
     </header>    

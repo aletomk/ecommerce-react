@@ -1,0 +1,40 @@
+.notFound{
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+    justify-items: center;
+}
+
+.notFound h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(234, 234, 234);
+    background-color: rgb(182, 16, 16);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.notFound img{
+    width: 40%;
+    margin: 60px;
+}
+
+.notFound span{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background-color: #F8C304;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.7s ease-out;
+}
+
+.notFound span:hover{
+    color: white;
+}
