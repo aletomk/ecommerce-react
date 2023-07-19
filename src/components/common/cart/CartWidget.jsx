@@ -1,11 +1,28 @@
 import { FaCartArrowDown } from "react-icons/fa";
-import "./Cart.css";
+import Badge from '@mui/material/Badge'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
+import "./Cart.css";
 
 export const CartWidget = () => {
+
+  const { cart } = useContext(CartContext);
+
     return <div className="div_cart">
-      <Link to="/cart"><FaCartArrowDown className="cart" /></Link>
-      <div className="cart_widget">3</div>
+      <Badge badgeContent={cart.length} sx={
+        { "& .MuiBadge-badge": {
+          backgroundColor: "#F8C304",
+          height: 18,
+          minWidth: 18,
+          padding: "0 4px",
+          fontSize: 12
+          } 
+        }
+      }
+      >
+        <Link to="/cart"><FaCartArrowDown className="cart" /></Link>
+      </Badge>
     </div>
 };
 

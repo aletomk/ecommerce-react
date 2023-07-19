@@ -26,7 +26,7 @@
   box-shadow: 2px 2.5px 5px rgba(0, 0, 0, 0.226), -2px -0.2px 4px rgba(0, 0, 0, 0.235);
 }
 
-#grilla_main{
+.grilla_main{
   grid-area: main;
 }
 

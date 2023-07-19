@@ -1,6 +1,6 @@
-/*import { CounterContainer } from "../../common/counter/CounterContainer";
+import { CounterContainer } from "../../common/counter/CounterContainer";
 
-export const ItemDetail = () => {
+export const ItemDetail = ({ producto, onAdd }) => {
     
     return (
         <div>
@@ -10,4 +10,4 @@ export const ItemDetail = () => {
             <CounterContainer stock={producto.stock} onAdd={onAdd} />
         </div>
     )
-}*/
+};

@@ -13,7 +13,7 @@ export let productos = [
         id: 2, 
         title: "Anet A8", 
         price: 60000, 
-        stock: 2, 
+        stock: 3, 
         description: "De origen chino y de bajo costo, la mejor relación precio/calidad del mercado.", 
         category: "impresoras", 
         img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1687996930/aneta8_mvr057.jpg"
@@ -23,7 +23,7 @@ export let productos = [
         id: 3, 
         title: "Arduino Mega 2560", 
         price: 12000, 
-        stock: 5, 
+        stock: 6, 
         description: "Placa Arduino que funciona como el cerebro de la impresora mediante código programado.", 
         category: "electrónica", 
         img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1688343866/arduinomega_h781ws.webp"
@@ -33,7 +33,7 @@ export let productos = [
         id: 4, 
         title: "Arduino Uno", 
         price: 9000, 
-        stock: 3, 
+        stock: 5, 
         description: "Alternativa a la Arduino Mega, es menos compleja por ende más limitada.", 
         category: "electrónica", 
         img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1687996930/arduinouno_wzw5up.png"

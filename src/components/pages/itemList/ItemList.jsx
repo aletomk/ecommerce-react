@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const ItemList = ( {items} ) => {
     return (
-        <main id="grilla_main">
+        <main className="grilla_main">
             <div className="categorias_div"> {/*Este div es provisoria, más adelante ira en un submenu en el navbar*/}
                 <ul className="categorias">
                     <Link to="/category/impresoras"><li>Impresoras</li></Link>
