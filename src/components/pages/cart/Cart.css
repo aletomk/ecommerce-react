@@ -1,9 +1,3 @@
-.div_cart{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 35px;
-}
-
 .cart{
     color: #000;
     width: 28px;

@@ -16,7 +16,7 @@ export const ItemListContainer = () => {
             (elemento) => elemento.category === category
         );
         const tarea = new Promise((resolve) => {
-        resolve(category === undefined ? productos : productosFiltrados);
+            resolve(category === undefined ? productos : productosFiltrados);
     });
 
     tarea
@@ -24,5 +24,7 @@ export const ItemListContainer = () => {
         .catch((error) => console.log(error));
     } , [category]);
     
-    return <ItemList items={items} />;
+    return <>
+        <ItemList items={items} />
+    </>
 };

@@ -3,13 +3,13 @@ import Badge from '@mui/material/Badge'
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
-import "./Cart.css";
+import "./CartWidget.css";
 
 export const CartWidget = () => {
 
   const { cart } = useContext(CartContext);
 
-    return <div className="div_cart">
+    return <div className="widget">
       <Badge badgeContent={cart.length} sx={
         { "& .MuiBadge-badge": {
           backgroundColor: "#F8C304",

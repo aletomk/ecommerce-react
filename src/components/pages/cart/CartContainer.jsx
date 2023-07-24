@@ -15,10 +15,31 @@ export const CartContainer = () => {
                     <h5>{elemento.quantity}</h5>
                     <button onClick={()=> deleteById(elemento.id)}>Eliminar</button>
                 </div>
-            })
+            })  
         }
-        <button onClick={clearCart}>Limpiar carrito</button>
+        {
+            cart.length > 0 && <button onClick={clearCart}>Limpiar carrito</button>
+        }
+        
     </div>
     );
 }
-
+/* import Swal from 'sweetalert2'
+Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
+*/

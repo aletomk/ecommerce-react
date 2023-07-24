@@ -1,5 +1,5 @@
 import { ItemListContainer } from "../components/pages/itemList/ItemListContainer";
-import { CartContainer } from "../components/common/cart/CartContainer";
+import { CartContainer } from "../components/pages/cart/CartContainer";
 import { ItemDetailContainer } from "../components/pages/itemDetail/ItemDetailContainer";
 
 export const routes = [
