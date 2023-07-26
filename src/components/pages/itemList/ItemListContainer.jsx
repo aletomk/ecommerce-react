@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { productos } from "../../../productsMock";
 import { ItemList } from "./ItemList";
 import { useParams } from "react-router-dom";
+import { getDocs, collection, query, where } from "firebase/firestore";
+import { dataBase } from "../../../firebaseConfig";
 import "./ItemList.css";
-
 
 export const ItemListContainer = () => {
 
@@ -12,19 +12,22 @@ export const ItemListContainer = () => {
     const {category} = useParams()
 
     useEffect( ()=> {
-        let productosFiltrados = productos.filter(
-            (elemento) => elemento.category === category
-        );
-        const tarea = new Promise((resolve) => {
-            resolve(category === undefined ? productos : productosFiltrados);
-    });
-
-    tarea
-        .then((respuesta) => setItems(respuesta))
-        .catch((error) => console.log(error));
-    } , [category]);
+        let itemsCollection = collection(dataBase, "products");
+        let consulta;
+        if(category){
+            consulta = query(itemsCollection, where("category", "==", category))
+        }else{
+            consulta = itemsCollection
+        }
+        getDocs(consulta).then((res)=>{
+            let productos = res.docs.map(doc => {
+                return { ...doc.data(), id: doc.id }
+            })
+            setItems(productos)
+        })
+    }, [category]);
     
     return <>
-        <ItemList items={items} />
+        <ItemList items={items} /> 
     </>
 };

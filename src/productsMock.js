@@ -64,7 +64,7 @@ export let productos = [
         title: "Cooler fan turbina 30x30 12v", 
         price: 1500, 
         stock: 30, 
-        description: "Turbina cooler 30x30mm 12v. Ideal para enfriar nozzle o placa Arduino", 
+        description: "Turbina cooler 30x30mm 12v. Ideal para enfriar nozzle o placa Arduino.", 
         category: "repuestos", 
         img: "https://res.cloudinary.com/dtudxtnbv/image/upload/v1688344664/cooler_mbn8gg.webp"
     },

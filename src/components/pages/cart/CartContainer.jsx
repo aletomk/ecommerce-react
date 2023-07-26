@@ -1,10 +1,29 @@
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
+import Swal from 'sweetalert2';
 import "./Cart.css";
 
 export const CartContainer = () => {
-    const {cart, clearCart, deleteById} = useContext(CartContext);
-    
+    const {cart, clearCart, deleteById, getTotalPrice, getTotalQuantity} = useContext(CartContext);
+
+    let totalPrice = getTotalPrice();
+    let totalQuantity = getTotalQuantity();
+
+    const Limpiar = () => {
+      Swal.fire({
+        title: '¿Deseas borrar todo el carrito?',
+        showDenyButton: true,
+        confirmButtonText: 'Sí, eliminar!',
+        confirmButtonColor: '#F8C304',
+        denyButtonText: 'No, no eliminar',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          clearCart()
+          Swal.fire('Carrito vaciado correctamente', '' ,'success')
+        } 
+      })
+  }
+  
     return (
     <div className="grilla_main">
         {
@@ -18,28 +37,14 @@ export const CartContainer = () => {
             })  
         }
         {
-            cart.length > 0 && <button onClick={clearCart}>Limpiar carrito</button>
+            cart.length > 0 && <button onClick={Limpiar}>Limpiar carrito</button>
         }
-        
+
+      <h2>El precio total es: {totalPrice}</h2>  
+      <h2>Las unidades totales son: {totalQuantity}</h2> 
     </div>
     );
 }
-/* import Swal from 'sweetalert2'
-Swal.fire({
-    title: 'Are you sure?',
-    text: "You won't be able to revert this!",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes, delete it!'
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire(
-        'Deleted!',
-        'Your file has been deleted.',
-        'success'
-      )
-    }
-  })
-*/
+
+
+

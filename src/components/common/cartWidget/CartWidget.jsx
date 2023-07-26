@@ -7,10 +7,11 @@ import "./CartWidget.css";
 
 export const CartWidget = () => {
 
-  const { cart } = useContext(CartContext);
+  const { getTotalQuantity } = useContext(CartContext);
+  let total = getTotalQuantity();
 
     return <div className="widget">
-      <Badge badgeContent={cart.length} sx={
+      <Badge badgeContent={total} sx={
         { "& .MuiBadge-badge": {
           backgroundColor: "#F8C304",
           height: 18,
