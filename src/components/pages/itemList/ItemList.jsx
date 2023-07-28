@@ -15,6 +15,7 @@ export const ItemList = ( {items} ) => {
                     <Link to="/category/electrónica"><li>Electrónica</li></Link>
                     <Link to="/category/filamentos"><li>Filamentos</li></Link>
                     <Link to="/category/repuestos"><li>Repuestos</li></Link>
+                    <Link to="/"><li>Todos</li></Link>
                 </ul>
             </div>
 
