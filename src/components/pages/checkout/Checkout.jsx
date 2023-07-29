@@ -11,7 +11,7 @@ export const Checkout = ({handleSubmit, handleChange, orderId }) => {
                 <div>
                     <h3>Gracias por su compra!</h3>
                     <h4>Su número de compra es: {orderId}</h4>
-                    <Link to="/">Volver a comprar</Link>
+                    <Link to="/shop">Volver a comprar</Link>
                 </div>
             ) : ( 
                 <form onSubmit={handleSubmit}>

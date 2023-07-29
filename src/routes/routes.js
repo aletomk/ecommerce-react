@@ -3,11 +3,17 @@ import { CartContainer } from "../components/pages/cart/CartContainer";
 import { ItemDetailContainer } from "../components/pages/itemDetail/ItemDetailContainer";
 import { CheckoutContainer } from "../components/pages/checkout/CheckoutContainer";
 import { Dashboard } from "../components/pages/dashboard/Dashboard";
+import { Home } from "../components/pages/home/Home";
 
 export const routes = [
     {
         id: "home",
         path: "/",
+        Element: Home
+    },
+    {
+        id: "shop",
+        path: "/shop",
         Element: ItemListContainer
     },
     {

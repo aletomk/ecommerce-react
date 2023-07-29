@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ItemList } from "./ItemList";
 import { useParams } from "react-router-dom";
-import { getDocs, collection, query, where } from "firebase/firestore";
+import { getDocs, collection, query, where, orderBy } from "firebase/firestore";
 import { dataBase } from "../../../firebaseConfig";
 import "./ItemList.css";
 
@@ -15,15 +15,15 @@ export const ItemListContainer = () => {
         let itemsCollection = collection(dataBase, "products");
         let consulta;
         if(category){
-            consulta = query(itemsCollection, where("category", "==", category))
+            consulta = query(itemsCollection, where("category", "==", category), orderBy("category"));
         }else{
-            consulta = itemsCollection
+            consulta = query(itemsCollection, orderBy("category"));
         }
         getDocs(consulta).then((res)=>{
             let productos = res.docs.map(doc => {
                 return { ...doc.data(), id: doc.id }
             })
-            setItems(productos)
+            setItems(productos);
         })
     }, [category]);
     

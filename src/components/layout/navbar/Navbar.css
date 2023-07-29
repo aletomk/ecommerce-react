@@ -26,15 +26,15 @@ nav{
     transition: all 0.6s ease-in-out;
 }
 
-.menuNav li a:hover{
+.menuNav li:not(.botonTienda) a:hover{
     color: #F8C304;
 }
 
 .tiendaCart{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 320px;
+    justify-content: flex-end;
+    width: 300px;
 }
 
 .botonTienda{

@@ -8,12 +8,11 @@ export const Navbar = ()=> {
         <nav>
             <ul className="menuNav">
                 <li><Link to="/">Inicio</Link></li>
-                <li><Link to="#">Nosotros</Link></li>
+                <li className="botonTienda"><Link to="/shop">Tienda</Link></li> 
                 <li><Link to="#">Contacto</Link></li>
             </ul>
         </nav>
         <ul className="tiendaCart">
-            <li className="botonTienda"><Link to="/">Tienda</Link></li> 
             <CartWidget />
         </ul>
     </header>    

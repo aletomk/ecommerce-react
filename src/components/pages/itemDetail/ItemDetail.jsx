@@ -1,13 +1,21 @@
 import { CounterContainer } from "../../common/counter/CounterContainer";
+import { Link } from "react-router-dom";
 import "./ItemDetail.css";
 
-export const ItemDetail = ({ producto, onAdd, totalQuantity }) => {
+export const ItemDetail = ({ producto, onAdd, totalQuantity, detail }) => {
 
     return (
-        <div>
-            <h2>{producto.title}</h2>
-            <h4>{producto.price}</h4>
-            <img src={producto.img} alt="" />
+        <div key={producto.id}>
+
+            <div>
+                <span>{detail.category}</span>
+                <img src={detail.img} />
+                <h2>{detail.title}</h2> 
+                <h3>${detail.price}</h3>
+                <div>{detail.description}</div>
+                <button><Link to="/cart">Comprar</Link></button>
+            </div>
+            
 
             {(typeof(totalQuantity) === "undefined" || producto.stock > totalQuantity) &&
                 producto.stock > 0 && (
