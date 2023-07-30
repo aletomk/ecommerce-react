@@ -44,6 +44,10 @@
   grid-area: main;
 }
 
+.card_detail{
+  grid-area: main;
+}
+
 #grilla_footer{
   grid-area: footer;
   background-color: #252525;

@@ -1,7 +1,55 @@
-img{
-    width: 30%;
+.card_detail{
+    display: flex;
+    align-items: flex-start;
+    margin: 50px;
 }
 
+.imagen{
+    width: 450px;
+    height: 400px;
+}
+
+.producto{
+    width: 50%;
+}
+
+.producto span{
+    font-family: 'Noto Serif Makasar', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.producto h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.producto h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.producto p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.description_title{
+    font-family: 'Noto Serif Makasar', serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
 
 
 
