@@ -46,6 +46,10 @@
 
 .card_detail{
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1.4fr;
+  justify-items: center;
+  margin: 80px 50px 100px 50px;
 }
 
 #grilla_footer{

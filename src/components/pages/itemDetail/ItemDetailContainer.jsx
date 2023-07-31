@@ -47,8 +47,10 @@ export const ItemDetailContainer = () => {
             });
     };
 
+    const {divisorDeMiles} = useContext(CartContext);
+
     return <>
-    <ItemDetail producto={producto} detail={detail} onAdd={onAdd} totalQuantity={totalQuantity} />
+    <ItemDetail producto={producto} detail={detail} onAdd={onAdd} totalQuantity={totalQuantity} divisorDeMiles={divisorDeMiles} />
     <ToastContainer />
     </>
 };

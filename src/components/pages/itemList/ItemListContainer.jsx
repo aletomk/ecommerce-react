@@ -9,7 +9,7 @@ export const ItemListContainer = () => {
 
     const [items, setItems] = useState([]);
 
-    const {category} = useParams()
+    const {category} = useParams();
 
     useEffect( ()=> {
         let itemsCollection = collection(dataBase, "products");

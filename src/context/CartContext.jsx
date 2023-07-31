@@ -41,21 +41,29 @@ export const CartContextProvider = ({children}) => {
       return acc + (elemento.price * elemento.quantity)
     }, 0)
     return total;
-  }
+  };
 
   const getTotalQuantity = () => {
     let total = cart.reduce( (acc, elemento) => {
       return acc + elemento.quantity
     }, 0)
     return total;
-  }
+  };
 
   const getQuantityById = (id) => {
     const product = cart.find( (elemento) => elemento.id === id)
     return product?.quantity
-  }
+  };
 
-  let data = { cart, addToCart, clearCart, deleteById, getTotalPrice, getTotalQuantity, getQuantityById };
+  const divisorDeMiles = (price) => {
+    if (price !== undefined && price !== null) {
+      return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+    return "";
+  };
+
+
+  let data = { cart, addToCart, clearCart, deleteById, getTotalPrice, getTotalQuantity, getQuantityById, divisorDeMiles };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;  
 };

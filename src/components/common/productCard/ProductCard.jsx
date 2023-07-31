@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { CiCircleChevRight } from "react-icons/ci";
+import { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
 import "./ProductCard.css";
 
 export const ProductCard = ( {item} ) => {
+
+    const {divisorDeMiles} = useContext(CartContext);
+
     return (
         <div key={item.id} className="card">
             <div>
@@ -12,7 +17,7 @@ export const ProductCard = ( {item} ) => {
             </div>
             <div className="container_product">
                 <h2>{item.title}</h2>
-                <h3>${item.price}</h3>
+                <h3>${divisorDeMiles(item.price)}</h3>
                 <Link to={`/itemDetail/${item.id}`}>
                     <div className="detalle">
                         <div className="texto_detalle">Ver detalle</div>
