@@ -21,7 +21,6 @@
   height: 95px;
   background-color: #E5E5E5;
   border-top: 1px solid #cecece;
-  border-bottom: 1.5px solid #000000;
 }
 
 #grilla_home{
@@ -44,12 +43,16 @@
   grid-area: main;
 }
 
-.card_detail{
+.grilla_card_detail{
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1.6fr 1.4fr;
   justify-items: center;
   margin: 80px 50px 100px 50px;
+}
+
+.grilla_cart{
+  grid-area: main;
 }
 
 #grilla_footer{

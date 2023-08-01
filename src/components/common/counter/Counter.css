@@ -1,0 +1,74 @@
+.container_counter h4{
+    font-family: 'Noto Serif Vithkuqi', serif;
+    font-size: 13px;
+    color: #9f9f9f;
+    margin-bottom: 10px;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 7px;
+    width: 180px;
+    height: 40px;
+    padding: 7px;
+    margin-bottom: 50px;
+}
+
+.counter li:hover{
+    cursor: pointer;
+}
+
+.counter h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #484848;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.onAdd{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #F8C304;
+    background-color: #f8c30418;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 7px;
+    transition: all 0.7s ease-in;
+}
+
+.onAdd:hover{
+    background-color: #f8c30444;
+    cursor: pointer;
+}
+
+.comprar{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    background-color: #f8c304b7;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 7px;
+    transition: all 0.7s ease-in;
+}
+
+.comprar:hover{
+    background-color: #f8c30461;
+    cursor: pointer;
+}

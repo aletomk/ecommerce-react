@@ -1,14 +1,30 @@
-const Counter = ( {contador, sumar, restar, onAdd} ) => {
+import { IconContext } from "react-icons";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import "./Counter.css";
+
+export const Counter = ( {contador, sumar, restar, onAdd, producto } ) => {
 
     return (
-    <div>
-          <button onClick={sumar}>sumar</button>
+    <div className="container_counter">
+      <h4>Unidades en stock: {producto.stock} </h4>
+      <div className="counter">
+          <li onClick={restar}>
+            <IconContext.Provider value={{ size: "27px" }}>
+              <AiOutlineMinus />
+            </IconContext.Provider>
+          </li>  
           <h3>{contador}</h3>
-          <button onClick={restar}>restar</button>
-  
-          <button onClick={()=>onAdd(contador)}>Agregar al carrito</button>
+          <li onClick={sumar}>
+            <IconContext.Provider value={{ size: "27px" }}>
+              <AiOutlinePlus />
+            </IconContext.Provider>
+          </li>
+      </div>
+        <div className="botones">    
+          <li onClick={()=>onAdd(contador)} className="onAdd">Añadir al carrito</li>
+          <Link to="/cart" onClick={()=>onAdd(contador)} className="comprar">Comprar ahora</Link>
+        </div>
       </div>
     )
   }
-  
-  export default Counter

@@ -8,7 +8,6 @@ import { getDoc, collection, doc} from "firebase/firestore";
 import { productosDetalle } from "../../../detailMock";
 import 'react-toastify/dist/ReactToastify.css';
 
-
 export const ItemDetailContainer = () => {
 
     const { addToCart, getQuantityById } = useContext(CartContext);
@@ -16,7 +15,7 @@ export const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({});
     const {id} = useParams();
     const totalQuantity = getQuantityById(id);
-
+    const {divisorDeMiles} = useContext(CartContext);
 
     useEffect( () => {
         let itemsCollection = collection(dataBase, "products");
@@ -35,19 +34,17 @@ export const ItemDetailContainer = () => {
         let productCart = {...producto, quantity: cantidad}
         addToCart(productCart);
 
-        toast('Producto agregado exitosamente', {
+        toast('Producto agregado exitosamente!', {
             position: "top-left",
-            autoClose: 1500,
-            hideProgressBar: false,
+            autoClose: 1000,
+            hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            progress: undefined,
+            progress: false,
             theme: "dark",
             });
     };
-
-    const {divisorDeMiles} = useContext(CartContext);
 
     return <>
     <ItemDetail producto={producto} detail={detail} onAdd={onAdd} totalQuantity={totalQuantity} divisorDeMiles={divisorDeMiles} />
