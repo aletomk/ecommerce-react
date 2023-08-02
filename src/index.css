@@ -71,7 +71,6 @@
 }
 
 /*1050PX*/
-
 @media screen and (max-width: 1050px) {
   #grilla_header{
     flex-direction: column;
@@ -257,7 +256,6 @@
     width: 75%;
   }
 }
-
 
 /*350PX*/
 @media screen and (max-width: 350px) {
