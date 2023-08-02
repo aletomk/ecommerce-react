@@ -4,8 +4,7 @@ import { CartContext } from "../../../context/CartContext";
 import Swal from 'sweetalert2';
 
 export const CartContainer = () => {
-    const {cart, clearCart, deleteById, getTotalPrice, getTotalQuantity} = useContext(CartContext);
-    const {divisorDeMiles} = useContext(CartContext);
+    const {cart, clearCart, deleteById, getTotalPrice, getTotalQuantity, divisorDeMiles} = useContext(CartContext);
 
     let totalPrice = getTotalPrice();
     let totalQuantity = getTotalQuantity();
@@ -25,7 +24,7 @@ export const CartContainer = () => {
     };
 
     return (
-    <Cart cart={cart} deleteById={deleteById} totalPrice={totalPrice} totalQuantity={totalQuantity} limpiar={limpiar} divisorDeMiles={divisorDeMiles} />
+    <Cart cart={cart} deleteById={deleteById} totalPrice={totalPrice} totalQuantity={totalQuantity} limpiar={limpiar} divisorDeMiles={divisorDeMiles} clearCart={clearCart} />
     );
 }
 

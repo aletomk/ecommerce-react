@@ -1,10 +1,68 @@
-footer > div{
+#grilla_footer div{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 40px;
+    margin: 20px 10px 10px 10px;
 }
+
+#grilla_footer h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#grilla_footer h2:hover{
+    color: #F8C309;
+    cursor: pointer;
+}
+
+.ubicacion h3 a{
+    font-family: 'REM', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.4s ease;
+}
+
+.ubicacion h3 a:hover{
+    color: #F8C309;
+}
+
+.faq li a{
+    font-family: 'REM', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    transition: all 0.4s ease;
+}
+
+.faq li a:hover{
+    color: #F8C309;
+}
+
+.redes{
+    display: flex;
+}
+
+.redes li{
+    margin: 10px;
+}
+
+.redes .MuiSvgIcon-root{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.redes .redes_item:nth-child(1) .MuiSvgIcon-root:hover{
+    color: #D43089;
+}
+
+.redes .redes_item:nth-child(2) .MuiSvgIcon-root:hover{
+    color: #25D366;
+}
+
+.redes .redes_item:nth-child(3) .MuiSvgIcon-root:hover{
+    color: #0073b1;
+}
+

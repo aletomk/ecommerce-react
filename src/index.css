@@ -39,24 +39,21 @@
   mask-image: linear-gradient(to top, transparent 10%, black 27%); 
 }
 
-#grilla_main{
+#grilla_main, .grilla_card_detail, .grilla_cart, .grilla_checkout{
   grid-area: main;
 }
 
 .grilla_card_detail{
-  grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1.6fr 1.4fr;
   justify-items: center;
   margin: 80px 50px 100px 50px;
 }
 
-.grilla_cart{
-  grid-area: main;
-}
-
 #grilla_footer{
   grid-area: footer;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #252525;
-  height: 110px;
 }

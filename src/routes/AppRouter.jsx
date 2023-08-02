@@ -19,7 +19,7 @@ export const AppRouter = () => {
                 routes.map( ({id, path, Element}) => <Route key={id} path={path} element={<Element />} /> )
             }
             </Route>
-                <Route path="*" element={<NotFound />} /> 
+                <Route path="*" element={<NotFound />} />   
         </Routes>
     );
 };

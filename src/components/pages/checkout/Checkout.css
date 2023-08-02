@@ -1,0 +1,125 @@
+.container_form{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.grilla_checkout h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+.grilla_checkout h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.grilla_checkout form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 30px 80px 30px 80px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+}
+
+.container_form .MuiOutlinedInput-notchedOutline {
+    border-color: #F8C304;
+    color: #F8C304;
+}
+
+.container_form .MuiOutlinedInput-notchedOutline.Mui-focused fieldset {
+    border-color: #F8C304;
+}
+
+.container_form .MuiOutlinedInput-notchedOutline:hover fieldset {
+    border-color: #F8C304;
+}
+
+.container_form .MuiOutlinedInput-root.Mui-focused fieldset{
+    border-color: #F8C304;
+}
+
+.container_form .MuiInputLabel-root.Mui-focused{
+    color: rgb(102, 102, 102);
+}
+
+.container_form form .text_field{
+    margin: 15px;
+    background-color: #fff;
+}
+
+.container_form form .button_form{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-color: #F8C304;
+    background-color: #F8C304;
+    margin: 30px 0 10px 0;
+    padding: 10px;
+}
+
+.exit_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exit_buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 7px;
+    width: 50%;
+    background-color: #F8C304;
+    border: 2px solid #F8C304;
+    transition: all 0.6s linear, transform 0.6s ease;
+}
+
+.exit_buttons a:hover{
+    background-color: #fff;
+    border: 2px solid #F8C304;
+}
+
+.exit_buttons li{
+    padding-right: 5px;
+}
+
+.order_num{
+    background-color: #f3f3f3;
+    padding: 50px;
+    margin: 10px 0 40px 0;
+    border-radius: 12px;
+}
+
+.order_num h3{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.order_num h4{
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.order_num h4 span{
+    font-weight: bold;
+}
+
+
+
