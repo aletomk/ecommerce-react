@@ -61,6 +61,29 @@
     margin-right: 5px;
 }
 
+.volver_tienda_responsive{
+    display: none;
+    background-color: #F8C304;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 60px;
+    width: 50%;
+}
+
+.volver_tienda_responsive a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volver_tienda_responsive li{
+    font-family: 'Dosis', sans-serif;  
+    font-size: 19px; 
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+
 .contador{
     display: flex;
     flex-direction: column;

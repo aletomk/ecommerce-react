@@ -82,6 +82,14 @@ export const ItemDetail = ({ producto, onAdd, totalQuantity, detail, divisorDeMi
                         </> 
                     ))}
             </div>
+            <div className="volver_tienda_responsive">
+                <Link to="/shop" className="link">
+                        <li>Volver a la Tienda</li> 
+                        <IconContext.Provider value={{ size: "19px" }}>
+                            <div className="icon_div"><AiFillShop/></div>
+                        </IconContext.Provider>                 
+                </Link>    
+                </div>
         </div>
     )
 };

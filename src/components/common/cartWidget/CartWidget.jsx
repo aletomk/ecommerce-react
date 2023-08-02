@@ -11,7 +11,7 @@ export const CartWidget = () => {
   let total = getTotalQuantity();
 
     return <div className="widget">
-      <Badge badgeContent={total} sx={
+      <Badge className="badge" badgeContent={total} sx={
         { "& .MuiBadge-badge": {
           backgroundColor: "#F8C304",
           height: 18,
@@ -24,6 +24,22 @@ export const CartWidget = () => {
       >
         <Link to="/cart"><FaCartArrowDown className="cart" /></Link>
       </Badge>
+
+      <Badge className="badge_responsive" badgeContent={total} sx={
+        { "& .MuiBadge-badge": {
+          color: "#fff",
+          backgroundColor: "#000",
+          height: 18,
+          minWidth: 18,
+          padding: "0 4px",
+          fontSize: 12
+          } 
+        }
+      }
+      >
+        <Link to="/cart"><FaCartArrowDown className="cart" /></Link>
+      </Badge>
+      
     </div>
 };
 

@@ -4,6 +4,18 @@
     margin-right: 35px;
 }
 
+.widget h2{
+    display: none;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 200;
+    margin-left: 10px;
+}
+
+.widget .badge_responsive{
+    display: none;
+}
+
 .cart{
     color: #000;
     width: 28px;

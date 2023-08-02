@@ -35,7 +35,7 @@ export const Footer = () => {
             </ul>
         </div>
         <div>
-            <h2>Preguntas frequentes y ayuda</h2>
+            <h2><span className="faq_h2">Preguntas frequentes y</span> ayuda</h2>
             <ul className="faq">
                 <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
                 <li><a href="#"><BsQuestionOctagon /> Ayuda</a></li>

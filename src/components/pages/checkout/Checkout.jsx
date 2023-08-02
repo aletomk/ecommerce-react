@@ -14,7 +14,7 @@ export const Checkout = ({handleSubmit, handleChange, orderId }) => {
             
             <div className="container_form">
             {orderId ? ( 
-                <div>
+                <div className="compra_exitosa">
                     <div className="order_num">
                         <h3>¡Gracias por su compra!</h3>
                         <h4>Su número de orden es: <span>{orderId}</span></h4>

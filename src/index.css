@@ -57,3 +57,211 @@
   grid-template-columns: repeat(3, 1fr);
   background-color: #252525;
 }
+
+/*MEDIA QUERIES*/
+
+/*1120PX*/
+@media screen and (max-width: 1120px) {
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .volver_tienda{
+    width: 65%;
+  }
+}
+
+/*1050PX*/
+
+@media screen and (max-width: 1050px) {
+  #grilla_header{
+    flex-direction: column;
+    height: auto;
+  }
+  .menuNav a{
+    font-size: 18px;
+  }
+  .tiendaCart{
+    width: 70px;
+  }
+  .widget{
+    align-items: center;
+    background-color: #F8C304;
+    border-radius: 12px;
+    padding: 15px 18px 10px 18px;
+    margin: 10px;
+  }
+  .widget .badge{
+    display: none;
+  }
+  .widget .badge_responsive{
+    display: flex;
+  }
+  .all_resumes{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*950PX*/
+@media screen and (max-width: 950px) {
+  .widget{
+    margin: 10px 0 40px 0;
+  }
+  .grilla_card_detail{
+    grid-template-columns: 0.4fr 1.6fr;
+  }
+  .volver_tienda{
+    display: none;
+  }
+  .volver_tienda_responsive{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+  .contador{
+    width: 100%;
+    margin: 50px 0 20px 0;
+  }
+  #grilla_footer span.faq_h2{
+    display: none;
+  }
+  #grilla_footer h2{
+    color: #F8C304;
+  }
+  .redes .redes_item:nth-child(1) .MuiSvgIcon-root{
+    color: #D43089;
+  }
+  .redes .redes_item:nth-child(2) .MuiSvgIcon-root{
+    color: #25D366;
+  }
+  .redes .redes_item:nth-child(3) .MuiSvgIcon-root{
+    color: #0073b1;
+  }
+}
+
+/*900PX*/
+@media screen and (max-width: 900px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*750PX*/
+@media screen and (max-width: 750px) {
+  .categorias{
+    flex-direction: column;
+  }
+  .categorias li{
+    margin: 3px;
+  }
+  .card{
+    height: 400px;
+  }
+  .card img{
+    height: 190px;
+  }
+  .all_resumes{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product_resume{
+    margin: 20px 8px 15px 8px;
+  }
+}
+
+/*700PX*/
+@media screen and (max-width: 700px) {
+  #grilla_footer{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .grilla_card_detail{
+    grid-template-columns: 1fr;
+  }
+  .faq{
+    text-align: center;
+  }
+}
+
+/*650PX*/
+@media screen and (max-width: 650px) {
+  .final_cart{
+    flex-direction: column;
+    margin: 20px 0 0 0;
+  }
+  .final_cart div{
+    margin: 15px 0 15px 0;
+  }
+  .compra_exitosa{
+    width: 400px;
+  }
+}
+
+/*600PX*/
+@media screen and (max-width: 600px) {
+  .cards{
+    grid-template-columns: 1fr;
+    margin: 40px 0 0 0;
+  }
+  .volver_tienda_responsive{
+    width: 65%;
+  }
+  .grilla_checkout form{
+    padding: 30px 40px 30px 40px;
+    width: 400px;
+  }
+}
+
+/*550PX*/
+@media screen and (max-width: 550px) {
+  #grilla_home{
+    height: 600px;
+  }
+  .grilla_card_detail{
+    margin: 60px 30px 50px 30px;
+  }
+  .bienvenida h1{
+    font-size: 42px;
+  }
+  .bienvenida h2{
+    font-size: 28px;
+  }
+  .bienvenida span{
+    font-size: 34px;
+  }
+  .all_resumes{
+    grid-template-columns: 1fr;
+  }
+}
+
+/*450PX*/
+@media screen and (max-width: 450px) {
+  .grilla_checkout form{
+    padding: 20px 30px 20px 30px;
+    width: 300px;
+  }
+  .compra_exitosa{
+    width: 300px;
+  }
+}
+
+/*400PX*/
+@media screen and (max-width: 400px) {
+  .logo{
+    width: 250px;
+    height: 45px;
+    margin-left: 0;
+  }
+  .menuNav a{
+    font-size: 19px;
+  }
+  .volver_tienda_responsive{
+    width: 75%;
+  }
+}
+
+
+/*350PX*/
+@media screen and (max-width: 350px) {
+  .grilla_card_detail{
+    margin: 50px 18px 30px 18px;
+  }
+}
