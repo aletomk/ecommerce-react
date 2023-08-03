@@ -1,5 +1,5 @@
 import { CounterContainer } from "../../common/counter/CounterContainer";
-import ImageMagnify from "react-image-magnify";
+import ReactImageZoom from 'react-image-zoom';
 import { IconContext } from "react-icons";
 import { ImZoomIn } from "react-icons/im";
 import { AiFillShop } from "react-icons/ai";
@@ -11,21 +11,20 @@ export const ItemDetail = ({ producto, onAdd, totalQuantity, detail, divisorDeMi
 
     if (!detail.img) {return <div>Imagen no disponible</div>;}
 
+    const imageDetail = detail.img;
+    const props = {
+        width: 300, 
+        height: 300, 
+        scale: 1.5, 
+        zoomPosition: "right", 
+        img: imageDetail,
+    };
+
     return (
         <div key={producto.id} className="grilla_card_detail">
 
             <div className="imagen">
-            <ImageMagnify
-                smallImage={{
-                src: detail.img,
-                isFluidWidth: true,
-                }}
-                largeImage={{
-                width: 600,
-                height: 600,
-                src: detail.img,
-                }}
-            />
+            <ReactImageZoom {...props} />
 
             <IconContext.Provider value={{ size: "20px" }}>
                 <div className="zoom_icon"><ImZoomIn/></div>
